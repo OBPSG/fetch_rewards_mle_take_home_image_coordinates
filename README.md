@@ -1,0 +1,1 @@
+fetch_rewards_mle_take_home_image_coordinates

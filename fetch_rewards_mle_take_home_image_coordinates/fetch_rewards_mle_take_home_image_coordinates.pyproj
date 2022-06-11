@@ -4,13 +4,15 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a9dd25ff-8aa2-49e2-90dc-c8865e7f8bfe</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>fetch_rewards_mle_take_home_image_coordinates.py</StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>fetch_rewards_mle_take_home_image_coordinates</Name>
     <RootNamespace>fetch_rewards_mle_take_home_image_coordinates</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.9</InterpreterId>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +23,11 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="fetch_rewards_mle_take_home_image_coordinates.py" />
+    <Compile Include="main.py" />
+    <Compile Include="calculator.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.9" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

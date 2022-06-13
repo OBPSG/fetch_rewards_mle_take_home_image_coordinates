@@ -15,4 +15,5 @@ class Point_Set_Simensions(BaseModel):
     p4: Point
     dimensions: Dimensions
 
-
+def generate_points(min_x: float, max_x: float, min_y: float, max_y: float, num_cols: int, num_rows: int):
+    return None

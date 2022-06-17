@@ -1,3 +1,4 @@
+from typing import List, Tuple
 from pydantic import BaseModel
 
 class Point(BaseModel):
@@ -15,12 +16,8 @@ class Point_Set_Dimensions(BaseModel):
     p4: Point
     dimensions: Dimensions
 
-class Bounds_Set(BaseModel):
-    minX: float
-    maxX: float
-    minY: float
-    maxY: float
-
+class Output(BaseModel):
+    points: List[List[Tuple[float, float]]]
 
 def min_max_xy(points):
     """
